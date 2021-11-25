@@ -1,11 +1,15 @@
 {
   "name": "test-jest",
   "private": true,
+  "engines": {
+    "node": "14"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest -i"
   },
   "dependencies": {
     "next": "12.0.4",
@@ -13,7 +17,11 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.3",
     "eslint": "7",
-    "eslint-config-next": "12.0.4"
+    "eslint-config-next": "12.0.4",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.5.2"
   }
 }
